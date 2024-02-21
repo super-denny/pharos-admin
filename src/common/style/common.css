@@ -1,0 +1,38 @@
+.search_div {
+    width: 100%;
+    height: 45px;
+}
+
+.search_content {
+    width: 220px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+}
+
+.search_title {
+    margin: 12px auto;
+    font-size: 14px;
+    width: 50px;
+    float: left;
+}
+
+
+.search_input {
+    width: 150px;
+    float: left;
+    margin: 8px 5px;
+}
+
+.search_content_but {
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.search_but {
+    margin: 8px 5px 8px auto;
+    float: left;
+}
