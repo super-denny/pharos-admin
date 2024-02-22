@@ -86,16 +86,16 @@ const columns = [
     width: 90
   },
   {
-    title: '账号',
-    colKey: 'account',
-    width: 120,
-    ellipsis: true,
-  },
-  {
     title: '昵称',
     colKey: 'nickname',
     width: 80,
     height: 80,
+  },
+  {
+    title: '账号',
+    colKey: 'account',
+    width: 120,
+    ellipsis: true,
   },
   {
     title: '状态',

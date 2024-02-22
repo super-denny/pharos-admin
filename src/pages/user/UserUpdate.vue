@@ -2,16 +2,12 @@
 
   <t-form :data="formData" :rules="rules" ref="form" @reset="onReset" @submit="onSubmit">
 
-    <t-form-item label="账号" name="account" style="width: 400px;">
-      <t-input v-model="formData.account" placeholder="请输入账号"></t-input>
-    </t-form-item>
-
     <t-form-item label="昵称" name="nickname" style="width: 400px;">
       <t-input v-model="formData.nickname" placeholder="请输入昵称"></t-input>
     </t-form-item>
 
-    <t-form-item id="psw" label="密码" name="password" style="width: 400px;">
-      <t-input v-model="formData.password" placeholder="请输入密码" type="password"></t-input>
+    <t-form-item id="account" label="账号" name="account" style="width: 400px;">
+      <t-input v-model="formData.account" placeholder="请输入账号"></t-input>
     </t-form-item>
 
     <t-form-item style="margin-left: 100px">
@@ -31,8 +27,7 @@ import {post, get} from "@/common/http";
 
 const INITIAL_DATA = {
   account: '',
-  nickname: '',
-  password: ''
+  nickname: ''
 };
 export default {
   name: "UserUpdate",
@@ -79,26 +74,6 @@ export default {
             type: 'warning',
             trigger: 'blur',
           },
-        ],
-        password: [
-          {
-            required: true,
-            message: '密码必填',
-            type: 'error',
-            trigger: 'blur',
-          },
-          {
-            min: 1,
-            message: '至少需要一个字符',
-            type: 'warning',
-            trigger: 'blur',
-          },
-          {
-            max: 20,
-            message: '密码长度超出',
-            type: 'warning',
-            trigger: 'blur',
-          },
         ]
       }
     };
@@ -107,7 +82,6 @@ export default {
     onReset() {
       this.formData.account = '';
       this.formData.nickname = ''
-      this.formData.password = ''
       this.$message.success('重置成功');
     },
     onSubmit({validateResult, firstError}) {
@@ -115,8 +89,7 @@ export default {
         const data = {
           id: this.$route.params.id,
           account: this.formData.account,
-          nickname: this.formData.nickname,
-          password: this.formData.password
+          nickname: this.formData.nickname
         }
         post(updateUser, data).then(
             res => {
@@ -137,7 +110,7 @@ export default {
   },
   mounted() {
     if (this.$route.params.id !== undefined) {
-      document.getElementById("psw").style.display = "none";
+      document.getElementById("account").style.display = "none";
       const data = {
         id: this.$route.params.id
       }

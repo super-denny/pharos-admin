@@ -2,7 +2,7 @@
 
   <t-form :data="formData" :rules="rules" ref="form" @reset="onReset" @submit="onSubmit">
 
-    <t-form-item id="psw" label="新密码" name="password" style="width: 400px;">
+    <t-form-item label="新密码" name="password" style="width: 400px;">
       <t-input v-model="formData.password" placeholder="请输入密码" type="password"></t-input>
     </t-form-item>
 
