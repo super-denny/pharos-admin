@@ -1,20 +1,15 @@
-<p style="display:flex; justify-content: center">
 
-</p>
-<p align="center">
-  <a href="https://tdesign.tencent.com/starter/vue/#/dashboard/base" target="_blank">
-    <img alt="TDesign Logo" width="200" src="https://tdesign.gtimg.com/starter/brand-logo.svg">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatility"></a>
-  <a href="https://github.com/Tencent/tdesign-vue/blob/develop/LICENSE">
-    <img src="https://img.shields.io/npm/l/tdesign-vue.svg?sanitize=true" alt="License">
-  </a>
-</p>
 
 ### 项目简介
+
+
+
+![](https://cdn.jsdelivr.net/gh/super-denny/images/Xnip2024-02-22_21-50-31.png)
+![](https://cdn.jsdelivr.net/gh/super-denny/images/Xnip2024-02-22_21-50-23.png)
+![](https://cdn.jsdelivr.net/gh/super-denny/images/Xnip2024-02-22_21-50-09.png)
+![](https://cdn.jsdelivr.net/gh/super-denny/images/Xnip2024-02-22_21-50-01.png)
+![](https://cdn.jsdelivr.net/gh/super-denny/images/Xnip2024-02-22_21-49-48.png)
+![](https://cdn.jsdelivr.net/gh/super-denny/images/Xnip2024-02-22_21-42-18.png)
 
 TDesign Vue Starter 是一个基于 tdesign-vue，使用 `Vue2`、`Webpack`开发，可进行个性化主题配置，旨在提供项目开箱即用的、配置式的初始项目。
 
