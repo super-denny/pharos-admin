@@ -31,6 +31,10 @@
           <t-button theme="primary" size="medium" @click="toDetailPage(row)" style="height:28px;width:50px;">
             查看
           </t-button>
+          <t-button v-if="showBut" theme="success" size="medium" @click="toUpdatePwdPage(row)"
+                    style="margin-left:3px; height:28px;width:70px;">
+            修改密码
+          </t-button>
           <t-button theme="warning" size="medium" @click="toAddPage(row)"
                     style="margin-left:3px; height:28px;width:50px;">
             编辑
@@ -72,6 +76,7 @@ export default {
       image: 'https://tdesign.gtimg.com/site/avatar.jpg',
       screenHeight: document.documentElement.clientHeight - 220 + 'px',
       data,
+      showBut: true,
       name: '',
       account: '',
       deleteId: -1,
@@ -150,7 +155,7 @@ export default {
         {
           title: '操作',
           colKey: 'operation',
-          width: 210,
+          width: 270,
           fixed: 'right'
         },
       ]
@@ -158,6 +163,10 @@ export default {
   },
   mounted() {
     this.requestList();
+    let userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    if (userInfo !== null && userInfo.type !== 2) {
+      this.showBut = false;
+    }
   },
   methods: {
     onPageSizeChange(size, pageInfo) {
@@ -184,6 +193,9 @@ export default {
     },
     toDetailPage(row) {
       this.$router.push({name: 'adminDetail', params: {id: row.id}})
+    },
+    toUpdatePwdPage(row) {
+      this.$router.push({name: 'adminUpdatePwd', params: {id: row.id}})
     },
     search: function () {
       this.requestList();

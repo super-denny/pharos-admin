@@ -6,6 +6,7 @@ export const adminList = '/api/admin/info/list';
 export const adminUpdate = '/api/admin/info/update';
 export const adminDetail = '/api/admin/info/detail';
 export const deleteAdmin = '/api/admin/info/delete';
+export const updateAdminPwd = '/api/admin/info/updatePwd'
 
 //用户
 export const guidanceTypeList = '/api/admin/guidanceType/list';

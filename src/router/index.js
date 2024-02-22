@@ -31,6 +31,11 @@ const routers = [
                 component: () => import('@/pages/admin/AdminUpdate.vue'),
             },
             {
+                path: '/admin/adminUpdatePwd',
+                name: 'adminUpdatePwd',
+                component: () => import('@/pages/admin/AdminUpdatePwd.vue'),
+            },
+            {
                 path: '/admin/adminDetail',
                 name: 'adminDetail',
                 component: () => import('@/pages/admin/AdminDetail.vue'),
