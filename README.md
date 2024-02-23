@@ -41,4 +41,4 @@ npm run build
 
 #### 5. 开源协议
 
-PharosAdmin 遵循 [MIT 协议](https://github.com/super-denny/pharos-admin/LICENSE)。
+PharosAdmin 遵循 [MIT 协议](https://github.com/super-denny/pharos-admin/blob/master/LICENSE)。
